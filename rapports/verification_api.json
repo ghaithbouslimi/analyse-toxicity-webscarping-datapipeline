@@ -1,0 +1,171 @@
+{
+  "started_at": "2026-11-12T19:13:34.946552+00:00",
+  "finished_at": "2026-11-12T19:14:10.788980+00:00",
+  "run_id": "4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c",
+  "base_url": "http://127.0.0.1:8000",
+  "mongodb_database": "analyse_toxicite",
+  "mongodb_version": "8.0.16",
+  "checks": [
+    {
+      "endpoint": "/health",
+      "status": 200
+    },
+    {
+      "endpoint": "/ready",
+      "status": 200
+    },
+    {
+      "endpoint": "/docs",
+      "status": 200
+    },
+    {
+      "endpoint": "/predict",
+      "status": 200,
+      "persisted": true,
+      "prediction_id": "e92668f2-1d25-4ecd-8cf0-a9b32fd47ec1",
+      "prediction": "toxique",
+      "toxicity_score": 0.9951171875,
+      "confidence_score": 0.9951171875,
+      "category": "tres_toxique",
+      "date": "2026-11-12T19:14:03.946928Z",
+      "model": {
+        "model_id": "unitary/multilingual-toxic-xlm-roberta",
+        "revision": "4ad6f5c104d9ce813a1a2f33cac0c5b579ef6ee5",
+        "label": "toxic",
+        "activation": "sigmoid",
+        "aggregation": "max-v1",
+        "max_length": 512,
+        "toxicity_threshold": 0.5,
+        "high_score_threshold": 0.8,
+        "device": "cpu",
+        "dtype": "float16",
+        "batch_size": 1,
+        "torch_threads": 2,
+        "torch_version": "2.15.0+cpu",
+        "transformers_version": "4.57.6"
+      },
+      "config_hash": "a3a617c86e38e5e056efb23993a8affcf8bb2f096d87fb41eb87137af9e09871",
+      "passage_scores": [
+        0.9951171875
+      ],
+      "token_count": 12,
+      "calibrated": false,
+      "latency_seconds": 0.5944051999999829,
+      "rss_mb": 216.1953125
+    },
+    {
+      "endpoint": "/predict",
+      "status": 200,
+      "persisted": true,
+      "prediction_id": "d115eb33-400c-4998-851c-91e4e618da42",
+      "prediction": "non_toxique",
+      "toxicity_score": 0.00042057037353515625,
+      "confidence_score": 0.9995794296264648,
+      "category": "non_toxique",
+      "date": "2026-11-12T19:14:04.403529Z",
+      "model": {
+        "model_id": "unitary/multilingual-toxic-xlm-roberta",
+        "revision": "4ad6f5c104d9ce813a1a2f33cac0c5b579ef6ee5",
+        "label": "toxic",
+        "activation": "sigmoid",
+        "aggregation": "max-v1",
+        "max_length": 512,
+        "toxicity_threshold": 0.5,
+        "high_score_threshold": 0.8,
+        "device": "cpu",
+        "dtype": "float16",
+        "batch_size": 1,
+        "torch_threads": 2,
+        "torch_version": "2.15.0+cpu",
+        "transformers_version": "4.57.6"
+      },
+      "config_hash": "a3a617c86e38e5e056efb23993a8affcf8bb2f096d87fb41eb87137af9e09871",
+      "passage_scores": [
+        0.00042057037353515625
+      ],
+      "token_count": 10,
+      "calibrated": false,
+      "latency_seconds": 0.39202290000002904,
+      "rss_mb": 218.7421875
+    },
+    {
+      "endpoint": "/predict",
+      "status": 200,
+      "persisted": true,
+      "prediction_id": "0747046c-e7fc-4946-9fe1-33cda5779af9",
+      "prediction": "non_toxique",
+      "toxicity_score": 0.0010280609130859375,
+      "confidence_score": 0.9989719390869141,
+      "category": "non_toxique",
+      "date": "2026-11-12T19:14:10.501471Z",
+      "model": {
+        "model_id": "unitary/multilingual-toxic-xlm-roberta",
+        "revision": "4ad6f5c104d9ce813a1a2f33cac0c5b579ef6ee5",
+        "label": "toxic",
+        "activation": "sigmoid",
+        "aggregation": "max-v1",
+        "max_length": 512,
+        "toxicity_threshold": 0.5,
+        "high_score_threshold": 0.8,
+        "device": "cpu",
+        "dtype": "float16",
+        "batch_size": 1,
+        "torch_threads": 2,
+        "torch_version": "2.15.0+cpu",
+        "transformers_version": "4.57.6"
+      },
+      "config_hash": "a3a617c86e38e5e056efb23993a8affcf8bb2f096d87fb41eb87137af9e09871",
+      "passage_scores": [
+        0.0010280609130859375
+      ],
+      "token_count": 198,
+      "calibrated": false,
+      "latency_seconds": 6.07542269999999,
+      "rss_mb": 234.30859375
+    },
+    {
+      "endpoint": "/predict",
+      "status": 422,
+      "characters": 0,
+      "source_url": null
+    },
+    {
+      "endpoint": "/predict",
+      "status": 422,
+      "characters": 0,
+      "source_url": null
+    },
+    {
+      "endpoint": "/predict",
+      "status": 422,
+      "characters": 3,
+      "source_url": null
+    },
+    {
+      "endpoint": "/predict",
+      "status": 422,
+      "characters": 20001,
+      "source_url": null
+    },
+    {
+      "endpoint": "/predict",
+      "status": 422,
+      "characters": 7,
+      "source_url": "file:///test"
+    }
+  ],
+  "batch_api_equal": true,
+  "statistics_unchanged": true,
+  "existing_api_predictions_preserved": true,
+  "invalid_requests_not_persisted": true,
+  "batch_predictions": 6,
+  "api_predictions_before": 3,
+  "api_predictions_created": 3,
+  "api_predictions": 6,
+  "created_prediction_ids": [
+    "e92668f2-1d25-4ecd-8cf0-a9b32fd47ec1",
+    "d115eb33-400c-4998-851c-91e4e618da42",
+    "0747046c-e7fc-4946-9fe1-33cda5779af9"
+  ],
+  "temporary_server_stopped": true
+}

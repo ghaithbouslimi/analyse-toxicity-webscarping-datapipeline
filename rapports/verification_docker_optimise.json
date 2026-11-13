@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-11-13T02:30:05.714503+00:00",
+  "base_url": "http://127.0.0.1:8005",
+  "articles": [
+    {
+      "url": "https://www.bbc.com/news/articles/c9kgjj206nzpo",
+      "api_http_status": 200,
+      "source_http_status": 200,
+      "prediction_id": "194e9a6c-4825-4792-9622-d51bcb773369",
+      "article_id": "2512f776f4bcf7e125bb20b7e767310796c32bb6ca0f0da24161353a9b6bddea",
+      "title": "UK cannot 'cherry pick' EU single market deal, says Barnier",
+      "characters": 5068,
+      "content_hash": "e4fad21abdb550992e0b879042405263e54c39ba263461afbeb056b9e503a1f9",
+      "extraction_status": "eligible",
+      "toxicity_score": 0.133056640625,
+      "category": "non_toxique",
+      "passages": 3,
+      "request_seconds": 29.235,
+      "mongo_verified": true
+    },
+    {
+      "url": "https://www.france24.com/fr/vid%C3%A9o/20261112-afghanistan-des-oliviers-pour-lutter-contre-la-s%C3%A9cheresse",
+      "api_http_status": 200,
+      "source_http_status": 200,
+      "prediction_id": "181ae605-b78a-47af-abda-6e6dafa8bf19",
+      "article_id": "4b344a97ed91cd8d4085458df03827ef0af476ef4c212880fdccc79ad53cffee",
+      "title": "Afghanistan : des oliviers pour lutter contre la sécheresse",
+      "characters": 535,
+      "content_hash": "da234607d06c0ea72ed8e3075faea775f50dc7c4d2887a6e6d2b865ae11af137",
+      "extraction_status": "eligible",
+      "toxicity_score": 0.0004189014434814453,
+      "category": "non_toxique",
+      "passages": 1,
+      "request_seconds": 4.423,
+      "mongo_verified": true
+    }
+  ],
+  "text_mode_verified": true,
+  "invalid_requests": {
+    "checked": 2,
+    "http_status": 422,
+    "no_prediction_created": true
+  },
+  "batch_statistics_unchanged": true,
+  "passed": true
+}

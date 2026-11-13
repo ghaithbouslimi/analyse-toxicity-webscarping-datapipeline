@@ -1,0 +1,107 @@
+{
+  "checked_at": "2026-11-13T02:35:17.977877+00:00",
+  "containers": {
+    "api": {
+      "cpus": 1.0,
+      "memory_limit_bytes": 2147483648,
+      "logging": {
+        "Type": "json-file",
+        "Config": {
+          "max-file": "2",
+          "max-size": "5m"
+        }
+      },
+      "health": "healthy",
+      "oom_killed": false,
+      "restart_count": 0
+    },
+    "mongodb": {
+      "cpus": 0.5,
+      "memory_limit_bytes": 536870912,
+      "logging": {
+        "Type": "json-file",
+        "Config": {
+          "max-file": "2",
+          "max-size": "5m"
+        }
+      },
+      "health": "healthy",
+      "oom_killed": false,
+      "restart_count": 0
+    }
+  },
+  "disk_c_free_before_bytes": 211947520,
+  "disk_c_free_after_bytes": 7454580736,
+  "docker_storage": "D:/CodexDataEngineerCache/docker-desktop/DockerDesktopWSL",
+  "image_bytes": 1713255008,
+  "model_cache_bytes": 2229541644,
+  "required_model_weights_approximately_bytes": 1112265417,
+  "observed_during_requests": {
+    "api_cpu_percent_of_one_core": 75.13,
+    "api_docker_memory": "1.301 GiB",
+    "mongodb_cpu_percent_of_one_core": 0.68,
+    "mongodb_docker_memory": "299.5 MiB"
+  },
+  "snapshot_after_restart": [
+    {
+      "BlockIO": "87.3MB / 0B",
+      "CPUPerc": "0.38%",
+      "Container": "analyse-toxicite-api-1",
+      "ID": "3c5c69ade2a0",
+      "MemPerc": "56.29%",
+      "MemUsage": "1.126GiB / 2GiB",
+      "Name": "analyse-toxicite-api-1",
+      "NetIO": "53.1kB / 19.5kB",
+      "PIDs": "6"
+    },
+    {
+      "BlockIO": "653MB / 13.5MB",
+      "CPUPerc": "0.70%",
+      "Container": "analyse-toxicite-mongodb-1",
+      "ID": "18ba36965fd4",
+      "MemPerc": "60.58%",
+      "MemUsage": "310.2MiB / 512MiB",
+      "Name": "analyse-toxicite-mongodb-1",
+      "NetIO": "54.1kB / 87.2kB",
+      "PIDs": "51"
+    }
+  ],
+  "api_restart_ready": true,
+  "predictions_preserved_after_restart": true,
+  "model": {
+    "model_id": "unitary/multilingual-toxic-xlm-roberta",
+    "revision": "4ad6f5c104d9ce813a1a2f33cac0c5b579ef6ee5",
+    "label": "toxic",
+    "activation": "sigmoid",
+    "aggregation": "max-v1",
+    "max_length": 512,
+    "toxicity_threshold": 0.5,
+    "high_score_threshold": 0.8,
+    "device": "cpu",
+    "dtype": "float16",
+    "batch_size": 1,
+    "torch_threads": 1,
+    "torch_version": "2.15.0+cpu",
+    "transformers_version": "4.57.6"
+  },
+  "tests_passed": 67,
+  "api_prediction_mongodb_uri": "mongodb://127.0.0.1:27018/analyse_toxicite",
+  "windows_history_preserved_on_port": 27019,
+  "passed": true,
+  "mongodb_startup": {
+    "checked_at": "2026-11-13T13:04:30.781253+00:00",
+    "endpoint": "mongodb://127.0.0.1:27018/analyse_toxicite",
+    "restart_policy": "always",
+    "docker_restart_verified": true,
+    "health": "healthy",
+    "collections_preserved": {
+      "pipeline_runs": 2,
+      "articles": 35,
+      "site_statistics": 0,
+      "predictions": 3,
+      "run_articles": 133
+    },
+    "compose_up_after_restart_needed": false,
+    "health_timeout_seconds": 30
+  }
+}

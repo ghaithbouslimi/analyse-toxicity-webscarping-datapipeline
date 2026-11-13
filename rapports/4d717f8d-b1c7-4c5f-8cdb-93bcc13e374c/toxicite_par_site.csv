@@ -1,0 +1,9 @@
+﻿run_id,site,observations,scored,non_toxic,slightly_toxic,highly_toxic,slightly_toxic_pct,highly_toxic_pct,toxic_pct,excluded_or_pending,coverage_pct,status,period_start,period_end
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,humanite,20,3,3,0,0,0.0,0.0,0.0,17,15.0,calculé,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,gamespot,15,0,0,0,0,,,,15,0.0,données insuffisantes,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,marianne,2,0,0,0,0,,,,2,0.0,données insuffisantes,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,lemonde,16,0,0,0,0,,,,16,0.0,données insuffisantes,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,france24,24,3,3,0,0,0.0,0.0,0.0,21,12.5,calculé,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,france3,2,0,0,0,0,,,,2,0.0,données insuffisantes,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,mediacites,10,0,0,0,0,,,,10,0.0,données insuffisantes,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
+4d717f8d-b1c7-4c5f-8cdb-93bcc13e374c,lepoint,2,0,0,0,0,,,,2,0.0,données insuffisantes,2026-10-29 16:53:27.979000+00:00,2026-11-12 16:53:27.979000+00:00
